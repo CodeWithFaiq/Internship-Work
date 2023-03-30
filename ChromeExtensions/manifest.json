@@ -1,0 +1,26 @@
+{
+    "name":"MyFirstChromeExtension",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "action":{
+       "default_icon":"penguin.png",
+       "default_popup":"popup.html"
+       
+    },
+    "content_scripts":[
+        {
+            "matches":["https://*.google.com/*"],
+            "js":["jquery.js","content.js"]
+        }
+    ],
+    "permissions":[
+        "tabs","storage","identity"
+    ],
+    "background":{
+        "service_worker":"background.js",
+        "type":"module"
+       
+    }
+
+    
+}
