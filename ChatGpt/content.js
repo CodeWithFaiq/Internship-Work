@@ -24,6 +24,7 @@ const submit=()=>{
         return alert('Please Enter some data in the textfield')
     }
     else{
+      
 let text='Generate script for Youtube video about ';
         
    let data=$('textarea').val();
@@ -32,11 +33,8 @@ let text='Generate script for Youtube video about ';
    $('textarea').val(newdata);
    $('.absolute .p-1').click();
  
-  setTimeout(()=>{
-$('.relative .flex  .flex-col .gap-1')[1].innerHTML.replace(text,'');
 
-$('textarea').val(data);
-  },500)
+
 
 }
 }
