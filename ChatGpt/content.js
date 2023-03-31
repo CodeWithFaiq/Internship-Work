@@ -33,7 +33,9 @@ let text='Generate script for Youtube video about ';
    $('textarea').val(newdata);
    $('.absolute .p-1').click();
  
-
+setTimeout(()=>{
+  document.querySelectorAll('.relative .flex .flex-col .gap-1 >div > div')[0].textContent='asdf'
+ },2500)
 
 
 }
