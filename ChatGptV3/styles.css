@@ -1,0 +1,22 @@
+.blur-effect {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.promptcard {
+    border-color:#d9d9e3;
+    
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+   
+
+}
+
+.promptcard:hover{
+    cursor:pointer;
+    border: 3px solid black;
+}
